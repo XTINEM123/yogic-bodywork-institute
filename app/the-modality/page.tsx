@@ -3,8 +3,9 @@ import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
-  title: "What Is Yogic Bodywork? A Clothed, Co-Created Bodywork Modality",
-  description: "Yogic bodywork combines therapeutic pressure, Thai-based assisted stretching, yoga postures, and breath into a clothed, participatory modality.",
+  title: "What Is Yogic Bodywork? Thai Massage Training Hawaii",
+  description: "Yogic bodywork is a co-created massage modality drawing on Thai massage, assisted stretching, yoga postural adjustments, and breathwork. Primarily clothed. Based in Hawaiʻi.",
+  alternates: { canonical: "https://yogicmassageinstitute.com/the-modality" },
 };
 
 const threads = [

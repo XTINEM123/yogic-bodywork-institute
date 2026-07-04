@@ -3,8 +3,9 @@ import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
-  title: "The Method: Breath, Position, Pressure, Participation & Rest",
-  description: "The five elements of yogic bodywork — breath, position, pressure, participation, and rest — each with a scientific basis and a practical expression.",
+  title: "The Yogic Bodywork Method | Breath, Position, Pressure, Participation, Rest",
+  description: "The science and practice of yogic bodywork's five elements: breath, position, pressure, participation, and rest. The method behind Hawaii's new massage training modality.",
+  alternates: { canonical: "https://yogicmassageinstitute.com/the-method" },
 };
 
 const elements = [

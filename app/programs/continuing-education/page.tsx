@@ -2,13 +2,37 @@ import type { Metadata } from "next";
 import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
-  title: "Yogic Bodywork Continuing Education for Massage Therapists",
-  description: "Hands-on CE workshops in yogic bodywork for licensed massage therapists. Earn CE hours while expanding your clinical range.",
+  title: "Massage CE Hawaii | Continuing Education for Licensed Therapists",
+  description: "Hands-on massage CE workshops in Hawaii for licensed massage therapists. Earn NCBTMB continuing education hours in yogic bodywork — Thai massage, assisted stretching, yoga postural adjustments, and breathwork.",
+  keywords: ["massage CE Hawaii", "NCBTMB CE Hawaii", "massage continuing education Hawaii", "Thai massage CE", "LMT continuing education Hawaii", "massage therapy CE hours Hawaii"],
+  alternates: { canonical: "https://yogicmassageinstitute.com/programs/continuing-education" },
+};
+
+const courseSchema = {
+  "@context": "https://schema.org",
+  "@type": "Course",
+  name: "Yogic Bodywork Continuing Education for Licensed Massage Therapists",
+  description:
+    "Hands-on CE workshops in yogic bodywork for licensed massage therapists in Hawaii. Earn NCBTMB continuing education hours in Thai massage, assisted stretching, yoga postural adjustments, and breathwork.",
+  url: "https://yogicmassageinstitute.com/programs/continuing-education",
+  provider: {
+    "@type": "EducationalOrganization",
+    name: "Yogic Bodywork Institute",
+    url: "https://yogicmassageinstitute.com",
+  },
+  educationalLevel: "Professional",
+  courseMode: "onsite",
+  locationCreated: { "@type": "Place", name: "Hawaiʻi, USA", address: { "@type": "PostalAddress", addressRegion: "HI", addressCountry: "US" } },
+  audience: { "@type": "EducationalAudience", educationalRole: "Licensed Massage Therapist" },
+  teaches: ["yogic bodywork", "Thai massage", "assisted stretching", "yoga postural adjustments", "breathwork", "breath-led bodywork"],
+  timeRequired: "PT6H",
+  inLanguage: "en",
 };
 
 export default function ContinuingEducationPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
       <section style={{ background: "var(--color-forest)" }} className="px-6 py-24">
         <div className="max-w-3xl mx-auto">
           <p className="eyebrow mb-5" style={{ color: "rgba(196,150,64,.8)" }}>Programs — Live Now</p>

@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Programs — Continuing Education & Certification",
+  title: "Massage Training Programs Hawaii | CE & Certification",
+  description: "Two massage training programs in Hawaii: continuing education workshops for licensed massage therapists (LMTs) and a forthcoming full practitioner certification in yogic bodywork.",
+  alternates: { canonical: "https://yogicmassageinstitute.com/programs" },
 };
 
 export default function ProgramsPage() {

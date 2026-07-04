@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
-  title: "Full Certification in Yogic Bodywork — Join the Waitlist",
-  description: "A comprehensive practitioner training in yogic bodywork. In development — join the waitlist to be notified when enrollment opens.",
+  title: "Massage Practitioner Certification Hawaii | Yogic Bodywork Institute",
+  description: "Full certification in yogic bodywork — a comprehensive practitioner training in Hawaii. In development. Join the waitlist to be notified when enrollment opens.",
+  alternates: { canonical: "https://yogicmassageinstitute.com/programs/certification" },
 };
 
 export default function CertificationPage() {

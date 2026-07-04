@@ -3,7 +3,9 @@ import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
-  title: "About — Our Story, Mission & Founder",
+  title: "About | Christine Marie Mason & Yogic Bodywork Institute Hawaii",
+  description: "Christine Marie Mason — yoga and anatomy teacher for 30 years — founded the Yogic Bodywork Institute to train practitioners in a new co-created bodywork modality based in Hawaiʻi.",
+  alternates: { canonical: "https://yogicmassageinstitute.com/about" },
 };
 
 export default function AboutPage() {
