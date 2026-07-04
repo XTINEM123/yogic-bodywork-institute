@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="section-divider" style={{ opacity: 0.15 }} />
       <div className="max-w-7xl mx-auto px-6 pt-16 pb-10">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_340px] gap-12 lg:gap-16 pb-14"
-          style={{ borderBottom: "1px solid rgba(247,243,238,.12)" }}>
+          style={{ borderBottom: "1px solid rgba(251,240,228,.12)" }}>
 
           {/* Brand + mission */}
           <div>
@@ -23,29 +23,29 @@ export default function Footer() {
                 <span className="font-serif font-light" style={{ fontSize: "1.08rem", color: "var(--color-cream)", letterSpacing: "0.01em" }}>
                   Yogic Bodywork
                 </span>
-                <span className="font-sans font-medium uppercase" style={{ fontSize: "0.56rem", letterSpacing: "0.3em", color: "rgba(196,154,60,.75)" }}>
+                <span className="font-sans font-medium uppercase" style={{ fontSize: "0.56rem", letterSpacing: "0.3em", color: "rgba(232,168,32,.75)" }}>
                   Institute
                 </span>
               </div>
             </Link>
             <p className="font-light leading-relaxed mb-5 max-w-xs"
-              style={{ fontSize: "0.95rem", color: "rgba(247,243,238,.62)" }}>
+              style={{ fontSize: "0.95rem", color: "rgba(251,240,228,.62)" }}>
               Training in a new co-created modality — breath-led, participatory, clothed bodywork for licensed practitioners and the curious alike.
             </p>
-            <p className="font-sans" style={{ fontSize: "0.75rem", color: "rgba(247,243,238,.35)", letterSpacing: "0.08em" }}>
+            <p className="font-sans" style={{ fontSize: "0.75rem", color: "rgba(251,240,228,.35)", letterSpacing: "0.08em" }}>
               Hawaiʻi · yogicbodyworkinstitute.com
             </p>
           </div>
 
           {/* Nav links */}
           <div>
-            <p className="eyebrow mb-5" style={{ fontSize: "0.68rem", color: "rgba(196,154,60,.75)" }}>Navigate</p>
+            <p className="eyebrow mb-5" style={{ fontSize: "0.68rem", color: "rgba(232,168,32,.75)" }}>Navigate</p>
             <ul className="flex flex-col gap-3">
               {footerNav.map((item) => (
                 <li key={item.href}>
                   <Link href={item.href}
                     className="font-light transition-opacity hover:opacity-100"
-                    style={{ fontSize: "0.9rem", color: "rgba(247,243,238,.6)" }}>
+                    style={{ fontSize: "0.9rem", color: "rgba(251,240,228,.6)" }}>
                     {item.label}
                   </Link>
                 </li>
@@ -56,19 +56,19 @@ export default function Footer() {
           {/* Two CTAs */}
           <div className="flex flex-col gap-8">
             <div>
-              <p className="eyebrow mb-2" style={{ fontSize: "0.68rem", color: "rgba(196,154,60,.75)" }}>
+              <p className="eyebrow mb-2" style={{ fontSize: "0.68rem", color: "rgba(232,168,32,.75)" }}>
                 Continuing Education
               </p>
-              <p className="font-light mb-3" style={{ fontSize: "0.88rem", color: "rgba(247,243,238,.55)" }}>
+              <p className="font-light mb-3" style={{ fontSize: "0.88rem", color: "rgba(251,240,228,.55)" }}>
                 Be notified when the next CE cohort opens.
               </p>
               <EmailCapture variant="ce" context="footer-ce" stacked />
             </div>
             <div>
-              <p className="eyebrow mb-2" style={{ fontSize: "0.68rem", color: "rgba(196,154,60,.75)" }}>
+              <p className="eyebrow mb-2" style={{ fontSize: "0.68rem", color: "rgba(232,168,32,.75)" }}>
                 Full Certification
               </p>
-              <p className="font-light mb-3" style={{ fontSize: "0.88rem", color: "rgba(247,243,238,.55)" }}>
+              <p className="font-light mb-3" style={{ fontSize: "0.88rem", color: "rgba(251,240,228,.55)" }}>
                 Join the waitlist for when certification opens.
               </p>
               <EmailCapture variant="cert" context="footer-cert" stacked />
@@ -78,7 +78,7 @@ export default function Footer() {
 
         {/* Legal bar */}
         <div className="pt-6 flex flex-col sm:flex-row justify-between gap-4"
-          style={{ fontSize: "0.72rem", color: "rgba(247,243,238,.3)" }}>
+          style={{ fontSize: "0.72rem", color: "rgba(251,240,228,.3)" }}>
           <p>© {new Date().getFullYear()} Yogic Bodywork Institute. All rights reserved.</p>
           <nav className="flex flex-wrap gap-5" aria-label="Legal">
             {legalNav.map((item) => (

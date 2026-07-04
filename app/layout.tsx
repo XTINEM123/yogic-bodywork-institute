@@ -1,20 +1,19 @@
 import type { Metadata } from "next";
-import { Jost, Cormorant_Garamond } from "next/font/google";
+import { Yatra_One, Hind } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
-const jost = Jost({
-  variable: "--font-jost",
+const yatra = Yatra_One({
+  variable: "--font-yatra",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: "400",
 });
 
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
+const hind = Hind({
+  variable: "--font-hind",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  style: ["normal", "italic"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -46,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${jost.variable} ${cormorant.variable}`}>
+    <html lang="en" className={`${yatra.variable} ${hind.variable}`}>
       <body className="min-h-screen flex flex-col">
         <Nav />
         <main className="flex-1">{children}</main>

@@ -12,8 +12,8 @@ export default function Nav() {
     <header
       className="sticky top-0 z-50 border-b"
       style={{
-        background: "rgba(247,243,238,0.97)",
-        borderColor: "rgba(196,154,60,.2)",
+        background: "rgba(251,240,228,0.97)",
+        borderColor: "rgba(232,168,32,.2)",
         backdropFilter: "blur(14px)",
         WebkitBackdropFilter: "blur(14px)",
       }}
@@ -35,7 +35,7 @@ export default function Nav() {
               Yogic Bodywork
             </span>
             <span className="font-sans font-medium uppercase leading-none"
-              style={{ fontSize: "0.58rem", letterSpacing: "0.3em", color: "rgba(30,58,47,0.75)" }}>
+              style={{ fontSize: "0.58rem", letterSpacing: "0.3em", color: "rgba(53,87,199,0.75)" }}>
               Institute
             </span>
           </div>
@@ -50,7 +50,7 @@ export default function Nav() {
                   onClick={() => setProgramsOpen(!programsOpen)}
                   onBlur={() => setTimeout(() => setProgramsOpen(false), 150)}
                   className="px-4 py-2 font-sans font-light tracking-[0.12em] uppercase transition-colors flex items-center gap-1"
-                  style={{ fontSize: "0.75rem", color: "rgba(74,52,40,.65)" }}
+                  style={{ fontSize: "0.75rem", color: "rgba(107,58,42,.75)" }}
                 >
                   {item.label}
                   <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
@@ -59,13 +59,13 @@ export default function Nav() {
                 </button>
                 {programsOpen && (
                   <div className="absolute top-full left-0 mt-1 w-52 border rounded-md shadow-lg overflow-hidden"
-                    style={{ background: "var(--color-cream)", borderColor: "rgba(196,154,60,.2)" }}>
+                    style={{ background: "var(--color-cream)", borderColor: "rgba(232,168,32,.2)" }}>
                     {item.children.map((child) => (
                       <Link
                         key={child.href}
                         href={child.href}
                         className="block px-4 py-3 font-sans font-light tracking-[0.1em] uppercase transition-colors"
-                        style={{ fontSize: "0.72rem", color: "rgba(74,52,40,.75)" }}
+                        style={{ fontSize: "0.72rem", color: "rgba(107,58,42,.85)" }}
                         onMouseEnter={e => (e.currentTarget.style.background = "var(--color-linen)")}
                         onMouseLeave={e => (e.currentTarget.style.background = "transparent")}
                         onClick={() => setProgramsOpen(false)}
@@ -81,9 +81,9 @@ export default function Nav() {
                 key={item.href}
                 href={item.href}
                 className="px-4 py-2 font-sans font-light tracking-[0.12em] uppercase transition-colors"
-                style={{ fontSize: "0.75rem", color: "rgba(74,52,40,.65)" }}
+                style={{ fontSize: "0.75rem", color: "rgba(107,58,42,.75)" }}
                 onMouseEnter={e => (e.currentTarget.style.color = "var(--color-bark)")}
-                onMouseLeave={e => (e.currentTarget.style.color = "rgba(74,52,40,.65)")}
+                onMouseLeave={e => (e.currentTarget.style.color = "rgba(107,58,42,.75)")}
               >
                 {item.label}
               </Link>
@@ -118,14 +118,14 @@ export default function Nav() {
       {/* Mobile menu */}
       {open && (
         <nav className="lg:hidden px-6 py-5 flex flex-col border-t"
-          style={{ background: "rgba(247,243,238,.99)", borderColor: "rgba(196,154,60,.15)" }}>
+          style={{ background: "rgba(251,240,228,.99)", borderColor: "rgba(232,168,32,.15)" }}>
           {primaryNav.map((item) => (
             <div key={item.href}>
               <Link
                 href={item.href}
                 onClick={() => setOpen(false)}
                 className="block py-3.5 font-sans font-light tracking-[0.14em] uppercase border-b transition-colors"
-                style={{ fontSize: "0.78rem", color: "rgba(74,52,40,.7)", borderColor: "rgba(196,154,60,.12)" }}
+                style={{ fontSize: "0.78rem", color: "rgba(107,58,42,.8)", borderColor: "rgba(232,168,32,.15)" }}
               >
                 {item.label}
               </Link>
@@ -135,7 +135,7 @@ export default function Nav() {
                   href={child.href}
                   onClick={() => setOpen(false)}
                   className="block py-2.5 pl-4 font-sans font-light tracking-[0.12em] uppercase border-b transition-colors"
-                  style={{ fontSize: "0.7rem", color: "rgba(74,52,40,.55)", borderColor: "rgba(196,154,60,.08)" }}
+                  style={{ fontSize: "0.7rem", color: "rgba(107,58,42,.65)", borderColor: "rgba(232,168,32,.1)" }}
                 >
                   ↳ {child.label}
                 </Link>
