@@ -45,7 +45,7 @@ export default function TheModalityPage() {
             </p>
             <p style={{ fontSize: "1rem" }}>
               Want to receive a session?{" "}
-              <a href="https://sundari.com" target="_blank" rel="noopener noreferrer"
+              <a href="https://sundarigardens.com" target="_blank" rel="noopener noreferrer"
                 style={{ color: "var(--color-forest)", textDecoration: "underline", textUnderlineOffset: "3px" }}>
                 Reach out here →
               </a>
