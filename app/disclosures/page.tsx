@@ -32,7 +32,7 @@ export default function DisclosuresPage() {
           <p>
             Yogic Bodywork Institute<br />
             Hawaiʻi<br />
-            hello@yogicbodyworkinstitute.com (TODO — update)
+            hello@yogicmassageinstitute.com (TODO — update)
           </p>
         </div>
       </div>

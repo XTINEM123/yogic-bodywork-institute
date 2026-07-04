@@ -17,6 +17,7 @@ const hind = Hind({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://yogicmassageinstitute.com"),
   title: {
     default: "Yogic Bodywork Institute — Training in a New Co-Created Modality",
     template: "%s | Yogic Bodywork Institute",
@@ -25,6 +26,7 @@ export const metadata: Metadata = {
     "Professional training in yogic bodywork — a breath-led, participatory, clothed bodywork modality. Continuing education for licensed massage therapists and a forthcoming certification program.",
   keywords: [
     "yogic bodywork",
+    "yogic massage",
     "massage continuing education",
     "NCBTMB CE",
     "bodywork certification",
@@ -34,6 +36,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     siteName: "Yogic Bodywork Institute",
+    url: "https://yogicmassageinstitute.com",
     locale: "en_US",
     type: "website",
   },

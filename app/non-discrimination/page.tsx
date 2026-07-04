@@ -19,7 +19,7 @@ export default function NonDiscriminationPage() {
             We are committed to maintaining an environment that is welcoming, inclusive, and free from discrimination and harassment. All students, faculty, and staff are expected to treat one another with respect and dignity.
           </p>
           <p>
-            If you believe you have experienced discrimination in connection with any program or activity of the Yogic Bodywork Institute, please contact us at hello@yogicbodyworkinstitute.com (TODO — update with final contact).
+            If you believe you have experienced discrimination in connection with any program or activity of the Yogic Bodywork Institute, please contact us at hello@yogicmassageinstitute.com (TODO — update with final contact).
           </p>
         </div>
       </div>

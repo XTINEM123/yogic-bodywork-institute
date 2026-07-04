@@ -21,7 +21,7 @@ export default function ContactPage() {
         <div className="card-linen p-8 rounded-lg mb-10">
           <p className="eyebrow mb-2" style={{ fontSize: "0.68rem", color: "var(--color-forest)" }}>Email</p>
           <p className="font-light mb-6" style={{ fontSize: "1.1rem", color: "var(--color-bark-soft)" }}>
-            hello@yogicbodyworkinstitute.com <span style={{ color: "var(--color-bark-muted)" }}>(TODO — update when ready)</span>
+            hello@yogicmassageinstitute.com <span style={{ color: "var(--color-bark-muted)" }}>(TODO — update when ready)</span>
           </p>
           <p className="eyebrow mb-2" style={{ fontSize: "0.68rem", color: "var(--color-forest)" }}>Location</p>
           <p className="font-light" style={{ fontSize: "1.1rem", color: "var(--color-bark-soft)" }}>

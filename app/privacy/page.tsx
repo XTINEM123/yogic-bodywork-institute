@@ -29,10 +29,10 @@ export default function PrivacyPage() {
           </p>
           <h2>Your rights</h2>
           <p>
-            You may unsubscribe from our lists at any time using the unsubscribe link in any email. To request deletion of your data, contact hello@yogicbodyworkinstitute.com (TODO — update).
+            You may unsubscribe from our lists at any time using the unsubscribe link in any email. To request deletion of your data, contact hello@yogicmassageinstitute.com (TODO — update).
           </p>
           <h2>Contact</h2>
-          <p>hello@yogicbodyworkinstitute.com (TODO — update)</p>
+          <p>hello@yogicmassageinstitute.com (TODO — update)</p>
         </div>
       </div>
     </section>

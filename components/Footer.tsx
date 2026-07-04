@@ -33,7 +33,7 @@ export default function Footer() {
               Training in a new co-created modality — breath-led, participatory, clothed bodywork for licensed practitioners and the curious alike.
             </p>
             <p className="font-sans" style={{ fontSize: "0.75rem", color: "rgba(251,240,228,.35)", letterSpacing: "0.08em" }}>
-              Hawaiʻi · yogicbodyworkinstitute.com
+              Hawaiʻi · yogicmassageinstitute.com
             </p>
           </div>
 

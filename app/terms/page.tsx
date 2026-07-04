@@ -32,7 +32,7 @@ export default function TermsPage() {
             Enrollment in workshops and programs is subject to separate enrollment agreements provided at the time of registration, which will govern payment, cancellation, and refund terms.
           </p>
           <h2>Contact</h2>
-          <p>hello@yogicbodyworkinstitute.com (TODO — update)</p>
+          <p>hello@yogicmassageinstitute.com (TODO — update)</p>
         </div>
       </div>
     </section>
