@@ -51,7 +51,7 @@ export default function TheModalityPage() {
               </a>
             </p>
             <blockquote>
-              The client is never passive. The session is a conversation between the practitioner's hands and the client's breath.
+              The session is a conversation between the practitioner's hands and the client's breath.
             </blockquote>
             <h2>The co-created principle</h2>
             <p>
@@ -119,7 +119,7 @@ export default function TheModalityPage() {
           </div>
           <div className="mt-10 text-center">
             <Link href="/the-method" className="btn btn-ghost">
-              Explore the method — Breath · Participation · Position →
+              Explore the method — Breath · Position · Pressure · Participation · Rest →
             </Link>
           </div>
         </div>

@@ -34,7 +34,7 @@ export default function CertificationPage() {
           <div className="prose-ybi mb-16">
             <h2>What the certification will cover</h2>
             <p>
-              The full certification program is a practitioner training designed for people who want to offer yogic bodywork sessions professionally. It covers the complete method — breath, participation, and position — alongside the philosophical and scientific foundations, client communication, session design, and supervised practice hours.
+              The full certification program is a practitioner training designed for people who want to offer yogic bodywork sessions professionally. It covers the complete method — breath, position, pressure, participation, and rest — alongside the philosophical and scientific foundations, client communication, session design, and supervised practice hours.
             </p>
             <p>
               This is not a weekend workshop. It is a genuine practitioner training, designed to produce practitioners who understand what they are doing and why. The length, format, and prerequisites are still being finalized.

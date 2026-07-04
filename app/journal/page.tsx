@@ -17,8 +17,8 @@ const posts = [
   },
   {
     type: "Opinion",
-    title: "Breath, Participation & Position — The Science",
-    summary: "The physiological and neurological evidence behind the three pillars of yogic bodywork. Respiratory psychophysiology, motor neuroscience, and mechanical advantage.",
+    title: "Breath, Position, Pressure, Participation & Rest — The Science",
+    summary: "The physiological and neurological evidence behind the five elements of yogic bodywork. Respiratory psychophysiology, mechanical advantage, myofascial research, motor neuroscience, and integration.",
     href: "#science",
     accent: "var(--color-bark-muted)",
     cta: "Read the essay",

@@ -8,26 +8,19 @@ export const metadata: Metadata = {
 };
 
 const pillars = [
-  {
-    word: "Breath",
-    body: "Every session is organized around the client's breath. The practitioner follows; the breath leads. This shifts the work from technique-driven to intelligence-driven.",
-  },
-  {
-    word: "Participation",
-    body: "The client is never passive. Micro-instructions invite active engagement — not performance, but presence. The bodywork becomes co-created.",
-  },
-  {
-    word: "Position",
-    body: "Therapeutic pressure, assisted stretching, and yoga-derived postures are applied in precise, purposeful relationship to one another. Position is the delivery system.",
-  },
+  { word: "Breath",        body: "Every session is organized around the client's breath. The practitioner follows; the breath leads." },
+  { word: "Position",      body: "Body geometry is set before pressure is applied. Thai-derived positioning uses gravity and lever mechanics to open tissue." },
+  { word: "Pressure",      body: "Sustained, considered pressure through clothing — structural and specific, calibrated to the client's breath." },
+  { word: "Participation", body: "Micro-instructions invite active engagement — not performance, but presence. The bodywork becomes co-created." },
+  { word: "Rest",          body: "Integration is part of the work. Stillness after pressure sequences lets the nervous system consolidate what just happened." },
 ];
 
 const journalPosts = [
   {
-    title: "Breath, Participation & Position — The Science",
+    title: "Breath, Position, Pressure, Participation & Rest — The Science",
     category: "Opinion",
     href: "/journal",
-    summary: "The physiological and neurological evidence behind the three pillars of yogic bodywork.",
+    summary: "The physiological and neurological evidence behind the five elements of yogic bodywork.",
   },
   {
     title: "A Yogic & Tantric View of Healing & Self-Agency",
@@ -76,7 +69,7 @@ export default function HomePage() {
               Yogic bodywork is a co-created bodywork modality — primarily clothed — drawing on four threads: Thai massage, assisted stretching, yoga postural adjustments, and breathwork. The client participates. The session is organized by breath. The result is deeper than most massage and more accessible than most yoga.
             </p>
             <p>
-              It is not massage in the traditional sense. It is not yoga in the traditional sense. It is something new — built from what works in both — calibrated for the nervous system, the connective tissue, and the human experience of being held while remaining awake.
+              It is not massage in the traditional sense. It is not yoga in the traditional sense. It is something new — built from what works in both — organized by breath, grounded in position and pressure, activated by participation, and completed by rest.
             </p>
           </div>
           <Link href="/the-modality" className="btn btn-ghost-forest">
@@ -85,21 +78,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Three pillars ── */}
+      {/* ── Five elements ── */}
       <section style={{ background: "var(--color-linen)" }} className="px-6 py-20">
         <div className="max-w-5xl mx-auto">
           <div className="section-divider mb-14" />
           <p className="eyebrow mb-4 text-center">The Method</p>
-          <h2 className="font-serif font-light text-center mb-14" style={{ fontSize: "clamp(2rem, 4vw, 3rem)" }}>
-            Breath · Participation · Position
+          <h2 className="font-serif text-center mb-14" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.6rem)" }}>
+            Breath · Position · Pressure · Participation · Rest
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {pillars.map((p) => (
-              <div key={p.word} className="pillar">
-                <h3 className="font-serif font-light text-2xl mb-3" style={{ color: "var(--color-forest)" }}>
+              <div key={p.word}>
+                <h3 className="font-serif text-xl mb-3" style={{ color: "var(--color-forest)" }}>
                   {p.word}
                 </h3>
-                <p className="font-light leading-relaxed" style={{ fontSize: "1.05rem", color: "var(--color-bark-soft)" }}>
+                <p className="font-light leading-relaxed" style={{ fontSize: "0.98rem", color: "var(--color-bark-soft)" }}>
                   {p.body}
                 </p>
               </div>
