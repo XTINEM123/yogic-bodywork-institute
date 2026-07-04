@@ -3,11 +3,11 @@
 @theme {
   /* ─── Palette — skin tones + brights ────────────────────────── */
   /* forest/bark/cream names kept so component classes need no edits */
-  --color-forest:      #3557C7;   /* cornflower blue — primary CTA */
-  --color-forest-mid:  #4B6FDB;   /* lighter cornflower — hover */
-  --color-sage:        #6B97E8;   /* soft cornflower — subtle */
-  --color-clay:        #B5115C;   /* dahlia magenta — cert CTA */
-  --color-amber:       #E8A820;   /* sunflower yellow — accent */
+  --color-forest:      #5768A0;   /* dusty periwinkle — Monet summer garden */
+  --color-forest-mid:  #6B7EB8;   /* lighter periwinkle — hover */
+  --color-sage:        #8B9DC8;   /* soft periwinkle — subtle */
+  --color-clay:        #9A4E63;   /* dusty old rose — faded dahlia */
+  --color-amber:       #C49640;   /* warm ochre — Monet haystack gold */
   --color-cream:       #FBF0E4;   /* warm skin-pale — page bg */
   --color-linen:       #EDD5B3;   /* warm wheat — card bg */
   --color-bark:        #2A1208;   /* deep umber — headings / strong text */
@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-forest {
   background-color: var(--color-forest);
   color: #ffffff;
-  box-shadow: 0 6px 20px -6px rgba(53,87,199,.4);
+  box-shadow: 0 6px 20px -6px rgba(87,104,160,.4);
 }
 .btn-forest:hover { background-color: var(--color-forest-mid); }
 
@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-clay {
   background-color: var(--color-clay);
   color: #ffffff;
-  box-shadow: 0 6px 20px -6px rgba(181,17,92,.4);
+  box-shadow: 0 6px 20px -6px rgba(154,78,99,.4);
 }
 .btn-clay:hover { opacity: 0.9; }
 
@@ -120,9 +120,9 @@ h1, h2, h3, h4, h5, h6 {
 .btn-ghost-forest {
   background-color: transparent;
   color: var(--color-forest);
-  border-color: rgba(53,87,199,.3);
+  border-color: rgba(87,104,160,.3);
 }
-.btn-ghost-forest:hover { background-color: rgba(53,87,199,.06); }
+.btn-ghost-forest:hover { background-color: rgba(87,104,160,.06); }
 
 /* Sunflower yellow — accent / tertiary */
 .btn-yellow {
@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ─── Cards ─────────────────────────────────────────────────────── */
 .card {
   background-color: white;
-  border: 1px solid rgba(232,168,32,.22);
+  border: 1px solid rgba(196,150,64,.22);
   border-radius: 8px;
   padding: 2rem;
   transition: box-shadow 0.25s ease, transform 0.25s ease;
@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .card-linen {
   background-color: var(--color-linen);
-  border: 1px solid rgba(232,168,32,.18);
+  border: 1px solid rgba(196,150,64,.18);
   border-radius: 8px;
   padding: 2rem;
 }
@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
 .input::placeholder { color: rgba(107,58,42,.4); }
 .input:focus {
   border-color: var(--color-forest);
-  box-shadow: 0 0 0 3px rgba(53,87,199,.1);
+  box-shadow: 0 0 0 3px rgba(87,104,160,.1);
 }
 
 /* ─── Prose ─────────────────────────────────────────────────────── */

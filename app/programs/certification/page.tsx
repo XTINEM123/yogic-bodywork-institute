@@ -57,7 +57,7 @@ export default function CertificationPage() {
               Be notified when enrollment opens. Waitlist members get first access and may be invited to participate in the program design.
             </p>
             <div className="max-w-md mx-auto">
-              <EmailCapture variant="cert" context="cert-page" buttonText="Join the Waitlist" stacked />
+              <EmailCapture context="cert-page" stacked />
             </div>
           </div>
         </div>

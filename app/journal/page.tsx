@@ -78,9 +78,8 @@ export default function JournalPage() {
             <p className="font-light mt-2 mb-8" style={{ fontSize: "0.9rem", color: "var(--color-bark-muted)" }}>
               Join a list to be notified of new content.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <EmailCapture variant="ce" context="journal-ce" buttonText="CE Updates" />
-              <EmailCapture variant="cert" context="journal-cert" buttonText="Cert Waitlist" />
+            <div className="max-w-md mx-auto text-left">
+              <EmailCapture context="journal" />
             </div>
           </div>
         </div>

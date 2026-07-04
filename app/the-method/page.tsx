@@ -89,15 +89,8 @@ export default function TheMethodPage() {
           <p className="font-light leading-relaxed mb-10 mx-auto" style={{ fontSize: "1.1rem", color: "var(--color-bark-soft)", maxWidth: "46ch" }}>
             The method is taught hands-on in our CE workshops. Reading it is a start; practicing it is the education.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <div className="flex flex-col gap-2 text-left w-full max-w-sm">
-              <p className="eyebrow" style={{ fontSize: "0.68rem", color: "var(--color-forest)" }}>CE cohort updates</p>
-              <EmailCapture variant="ce" context="method-ce" />
-            </div>
-            <div className="flex flex-col gap-2 text-left w-full max-w-sm">
-              <p className="eyebrow" style={{ fontSize: "0.68rem", color: "var(--color-clay)" }}>Certification waitlist</p>
-              <EmailCapture variant="cert" context="method-cert" />
-            </div>
+          <div className="max-w-md mx-auto text-left">
+            <EmailCapture context="method" />
           </div>
         </div>
       </section>

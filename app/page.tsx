@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
   title: "Yogic Bodywork Institute — Training in a New Co-Created Modality",
@@ -74,7 +73,7 @@ export default function HomePage() {
           </h2>
           <div className="prose-ybi mb-8">
             <p>
-              Yogic bodywork is a clothed, co-created bodywork modality drawing on four threads: therapeutic pressure, Thai-based assisted stretching, yoga postures, and breath. The client participates. The session is organized by breath. The result is deeper than most massage and more accessible than most yoga.
+              Yogic bodywork is a co-created bodywork modality — primarily clothed — drawing on four threads: Thai massage, assisted stretching, yoga postural adjustments, and breathwork. The client participates. The session is organized by breath. The result is deeper than most massage and more accessible than most yoga.
             </p>
             <p>
               It is not massage in the traditional sense. It is not yoga in the traditional sense. It is something new — built from what works in both — calibrated for the nervous system, the connective tissue, and the human experience of being held while remaining awake.
@@ -126,46 +125,40 @@ export default function HomePage() {
 
             {/* CE */}
             <div className="path-card-ce">
-              <p className="eyebrow mb-3" style={{ color: "rgba(196,154,60,.85)", fontSize: "0.7rem" }}>
+              <p className="eyebrow mb-3" style={{ color: "rgba(196,150,64,.85)", fontSize: "0.7rem" }}>
                 Live Now — Enrolling
               </p>
-              <h3 className="font-serif font-light text-3xl mb-4" style={{ color: "var(--color-cream)" }}>
+              <h3 className="font-serif text-3xl mb-4" style={{ color: "var(--color-cream)" }}>
                 Continuing Education
               </h3>
-              <p className="font-light leading-relaxed mb-6" style={{ fontSize: "1.05rem", color: "rgba(247,243,238,.78)" }}>
+              <p className="font-light leading-relaxed mb-6" style={{ fontSize: "1.05rem", color: "rgba(251,240,228,.78)" }}>
                 Hands-on CE workshops for currently licensed massage therapists. Earn CE hours in a new modality while expanding your clinical range.
               </p>
-              <p className="font-sans mb-6" style={{ fontSize: "0.8rem", color: "rgba(247,243,238,.55)", letterSpacing: "0.06em" }}>
+              <p className="font-sans mb-8" style={{ fontSize: "0.8rem", color: "rgba(251,240,228,.5)", letterSpacing: "0.06em" }}>
                 For: licensed massage therapists (LMTs)
               </p>
-              <div className="border-t pt-5" style={{ borderColor: "rgba(247,243,238,.15)" }}>
-                <p className="font-light mb-3" style={{ fontSize: "0.88rem", color: "rgba(247,243,238,.6)" }}>
-                  Be notified when the next cohort opens.
-                </p>
-                <EmailCapture variant="ce" context="home-ce" buttonText="Notify Me" />
-              </div>
+              <Link href="/programs/continuing-education" className="btn" style={{ background: "rgba(251,240,228,.15)", color: "var(--color-cream)", border: "1px solid rgba(251,240,228,.3)" }}>
+                Learn more →
+              </Link>
             </div>
 
             {/* Certification */}
             <div className="path-card-cert">
-              <p className="eyebrow mb-3" style={{ color: "rgba(247,243,238,.65)", fontSize: "0.7rem" }}>
+              <p className="eyebrow mb-3" style={{ color: "rgba(251,240,228,.6)", fontSize: "0.7rem" }}>
                 Coming Soon — Join Waitlist
               </p>
-              <h3 className="font-serif font-light text-3xl mb-4" style={{ color: "var(--color-cream)" }}>
+              <h3 className="font-serif text-3xl mb-4" style={{ color: "var(--color-cream)" }}>
                 Full Certification
               </h3>
-              <p className="font-light leading-relaxed mb-6" style={{ fontSize: "1.05rem", color: "rgba(247,243,238,.78)" }}>
+              <p className="font-light leading-relaxed mb-6" style={{ fontSize: "1.05rem", color: "rgba(251,240,228,.78)" }}>
                 A comprehensive practitioner training in yogic bodywork — the full method, its philosophy, its science, and its clinical application.
               </p>
-              <p className="font-sans mb-6" style={{ fontSize: "0.8rem", color: "rgba(247,243,238,.55)", letterSpacing: "0.06em" }}>
+              <p className="font-sans mb-8" style={{ fontSize: "0.8rem", color: "rgba(251,240,228,.5)", letterSpacing: "0.06em" }}>
                 For: aspiring practitioners & serious students
               </p>
-              <div className="border-t pt-5" style={{ borderColor: "rgba(247,243,238,.15)" }}>
-                <p className="font-light mb-3" style={{ fontSize: "0.88rem", color: "rgba(247,243,238,.6)" }}>
-                  Join the waitlist and be first to know.
-                </p>
-                <EmailCapture variant="cert" context="home-cert" buttonText="Join Waitlist" />
-              </div>
+              <Link href="/programs/certification" className="btn" style={{ background: "rgba(251,240,228,.15)", color: "var(--color-cream)", border: "1px solid rgba(251,240,228,.3)" }}>
+                Learn more & join waitlist →
+              </Link>
             </div>
           </div>
         </div>
@@ -182,9 +175,14 @@ export default function HomePage() {
           <p className="font-light leading-relaxed mb-8 mx-auto" style={{ fontSize: "1.15rem", color: "var(--color-bark-soft)", maxWidth: "48ch" }}>
             The free mini-class introduces the first pillar — breath — through a short guided practice you can experience right now. No equipment, no experience needed.
           </p>
-          <Link href="/journal" className="btn btn-forest">
-            Access the Free Mini-Class
-          </Link>
+          <div className="flex flex-wrap gap-3 justify-center">
+            <Link href="/journal" className="btn btn-forest">
+              Access the Free Mini-Class
+            </Link>
+            <Link href="/journal" className="btn btn-ghost">
+              See a session demo →
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -195,7 +193,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-14 items-center">
             {/* Photo placeholder */}
             <div className="rounded-lg overflow-hidden aspect-[3/4]"
-              style={{ background: "linear-gradient(145deg, rgba(107,143,113,.35), rgba(196,154,60,.25), var(--color-linen))", border: "1px solid rgba(196,154,60,.2)" }}>
+              style={{ background: "linear-gradient(145deg, rgba(87,104,160,.2), rgba(196,150,64,.2), var(--color-linen))", border: "1px solid rgba(196,150,64,.2)" }}>
               <div className="w-full h-full flex items-end p-5">
                 <p className="font-sans" style={{ fontSize: "0.68rem", letterSpacing: "0.14em", textTransform: "uppercase", color: "rgba(42,26,16,.3)" }}>
                   📷 Founder portrait

@@ -8,10 +8,10 @@ export const metadata: Metadata = {
 };
 
 const threads = [
-  { title: "Therapeutic pressure", body: "Deep, considered pressure applied through clothing to fascia and muscle. Not relaxation massage — structural and specific." },
-  { title: "Thai-based assisted stretching", body: "Passive and active-assisted stretches drawn from Thai bodywork traditions, adapted for the yogic context." },
-  { title: "Yoga postures", body: "Supported asana woven into the session — the body meets familiar forms while the practitioner holds the structure." },
-  { title: "Breath", body: "The organizing thread. The client's breath determines pace, depth, and direction. The practitioner listens with their hands." },
+  { title: "Thai massage", body: "The structural foundation: Thai-style pressure applied through clothing with hands, forearms, and body weight. Systematic, specific, and far deeper than it looks." },
+  { title: "Assisted stretching", body: "Passive and active-assisted stretches that move the client through range-of-motion while the practitioner holds the geometry. Neither physiotherapy nor yoga — a third thing." },
+  { title: "Yoga postural adjustments", body: "Supported asana woven into the session. The body meets familiar forms while the practitioner refines alignment, depth, and breath engagement in real time." },
+  { title: "Breathwork", body: "The organizing thread. The client's breath determines pace, depth, and direction. All transitions happen on exhale. The practitioner listens with their hands." },
 ];
 
 export default function TheModalityPage() {
@@ -25,7 +25,7 @@ export default function TheModalityPage() {
             What is yogic bodywork?
           </h1>
           <p className="font-light leading-relaxed" style={{ fontSize: "1.2rem", color: "rgba(247,243,238,.75)", maxWidth: "52ch" }}>
-            A clothed, co-created bodywork modality built from four threads: therapeutic pressure, assisted stretching, yoga postures, and breath.
+            A co-created bodywork modality — primarily clothed, to allow for the full range of Thai massage, assisted stretching, yoga postural adjustments, and breathwork.
           </p>
         </div>
       </section>
@@ -39,9 +39,16 @@ export default function TheModalityPage() {
             <p>
               Yogic bodywork is not a technique you apply to a body. It is a modality — a way of relating to the body that produces consistent results across practitioners, clients, and contexts. The difference matters: techniques can be mechanically reproduced; modalities require the practitioner to be present and responsive.
             </p>
-            <h2>Clothed & accessible</h2>
+            <h2>Primarily clothed</h2>
             <p>
-              All sessions are conducted fully clothed. This is not a compromise — it is a design decision. Clothing reduces the barriers to receiving bodywork and makes the work accessible to people who would not otherwise seek it: those with body image concerns, trauma histories, or simply a preference for modesty.
+              Sessions are conducted primarily clothed — not as a compromise, but because the work requires it. Thai massage, assisted stretching, and yoga postural adjustments all involve movement, leverage, and full-body positioning that simply cannot happen without clothing. The clothed format also widens access: it removes barriers for those with body image concerns, trauma histories, or a preference for modesty.
+            </p>
+            <p style={{ fontSize: "1rem" }}>
+              Want to receive a session?{" "}
+              <a href="https://sundari.com" target="_blank" rel="noopener noreferrer"
+                style={{ color: "var(--color-forest)", textDecoration: "underline", textUnderlineOffset: "3px" }}>
+                Reach out here →
+              </a>
             </p>
             <blockquote>
               The client is never passive. The session is a conversation between the practitioner's hands and the client's breath.
@@ -73,7 +80,7 @@ export default function TheModalityPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {threads.map((t, i) => (
               <div key={t.title} className="card">
-                <span className="font-serif italic text-4xl" style={{ color: "rgba(196,154,60,.4)" }}>
+                <span className="font-serif italic text-4xl" style={{ color: "rgba(196,150,64,.4)" }}>
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <h3 className="font-serif font-light text-2xl mt-3 mb-3" style={{ color: "var(--color-forest)" }}>
@@ -107,7 +114,7 @@ export default function TheModalityPage() {
               <p className="font-light leading-relaxed mb-5" style={{ fontSize: "1.05rem", color: "var(--color-bark-soft)" }}>
                 Get notified when the next CE cohort opens. Hands-on, in-person workshops in Hawaiʻi.
               </p>
-              <EmailCapture variant="ce" context="modality-ce" />
+              <EmailCapture context="modality" />
             </div>
           </div>
           <div className="mt-10 text-center">

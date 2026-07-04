@@ -11,7 +11,7 @@ export default function ContinuingEducationPage() {
     <>
       <section style={{ background: "var(--color-forest)" }} className="px-6 py-24">
         <div className="max-w-3xl mx-auto">
-          <p className="eyebrow mb-5" style={{ color: "rgba(196,154,60,.8)" }}>Programs — Live Now</p>
+          <p className="eyebrow mb-5" style={{ color: "rgba(196,150,64,.8)" }}>Programs — Live Now</p>
           <h1 className="font-serif font-light mb-5" style={{ fontSize: "clamp(2.4rem, 6vw, 4rem)", color: "var(--color-cream)", lineHeight: 1.08 }}>
             Continuing Education
           </h1>
@@ -79,7 +79,7 @@ export default function ContinuingEducationPage() {
               Cohort dates are finalized. Enter your email to be the first to know when enrollment opens.
             </p>
             <div className="max-w-md mx-auto">
-              <EmailCapture variant="ce" context="ce-page" buttonText="Notify Me" stacked />
+              <EmailCapture context="ce-page" stacked />
             </div>
             <p className="mt-4 font-light" style={{ fontSize: "0.85rem", color: "var(--color-bark-muted)" }}>
               For licensed massage therapists only. No spam, ever.

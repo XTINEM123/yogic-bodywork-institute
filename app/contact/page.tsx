@@ -30,23 +30,11 @@ export default function ContactPage() {
         </div>
 
         <div className="section-divider mb-10" />
-        <h2 className="font-serif font-light mb-8" style={{ fontSize: "1.8rem" }}>Stay on the lists</h2>
-        <div className="flex flex-col gap-8">
-          <div>
-            <p className="eyebrow mb-2" style={{ fontSize: "0.7rem", color: "var(--color-forest)" }}>CE cohort updates</p>
-            <p className="font-light mb-3" style={{ fontSize: "1rem", color: "var(--color-bark-soft)" }}>
-              For licensed massage therapists — be notified when the next CE cohort opens.
-            </p>
-            <EmailCapture variant="ce" context="contact-ce" />
-          </div>
-          <div>
-            <p className="eyebrow mb-2" style={{ fontSize: "0.7rem", color: "var(--color-clay)" }}>Certification waitlist</p>
-            <p className="font-light mb-3" style={{ fontSize: "1rem", color: "var(--color-bark-soft)" }}>
-              Join the waitlist for when the full certification program opens.
-            </p>
-            <EmailCapture variant="cert" context="contact-cert" />
-          </div>
-        </div>
+        <h2 className="font-serif font-light mb-4" style={{ fontSize: "1.8rem" }}>Stay in touch</h2>
+        <p className="font-light mb-8" style={{ fontSize: "1rem", color: "var(--color-bark-soft)" }}>
+          Join the list and let us know what you&apos;re interested in — we&apos;ll reach out when relevant.
+        </p>
+        <EmailCapture context="contact" />
       </div>
     </section>
   );

@@ -101,17 +101,10 @@ export default function AboutPage() {
             Stay close as we build
           </h2>
           <p className="font-light mb-10 mx-auto" style={{ fontSize: "1.1rem", color: "var(--color-bark-soft)", maxWidth: "44ch" }}>
-            Two lists. One for CE cohort updates, one for certification. Both are early-interest lists, not spam.
+            Join the list — receiving sessions, CE cohort updates, or certification. We&apos;ll reach out when it&apos;s relevant to you.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <div className="flex flex-col gap-2 text-left w-full max-w-xs">
-              <p className="eyebrow" style={{ fontSize: "0.68rem", color: "var(--color-forest)" }}>CE updates</p>
-              <EmailCapture variant="ce" context="about-ce" />
-            </div>
-            <div className="flex flex-col gap-2 text-left w-full max-w-xs">
-              <p className="eyebrow" style={{ fontSize: "0.68rem", color: "var(--color-clay)" }}>Certification waitlist</p>
-              <EmailCapture variant="cert" context="about-cert" />
-            </div>
+          <div className="max-w-md mx-auto text-left">
+            <EmailCapture context="about" stacked />
           </div>
         </div>
       </section>

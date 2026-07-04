@@ -7,7 +7,7 @@ export default function Footer() {
     <footer style={{ background: "var(--color-bark)", color: "var(--color-cream)" }}>
       <div className="section-divider" style={{ opacity: 0.15 }} />
       <div className="max-w-7xl mx-auto px-6 pt-16 pb-10">
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_340px] gap-12 lg:gap-16 pb-14"
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_320px] gap-12 lg:gap-16 pb-14"
           style={{ borderBottom: "1px solid rgba(251,240,228,.12)" }}>
 
           {/* Brand + mission */}
@@ -20,10 +20,10 @@ export default function Footer() {
                 <line x1="50" y1="22" x2="50" y2="80" stroke="var(--color-amber)" strokeWidth="2" opacity="0.6" />
               </svg>
               <div className="flex flex-col leading-none gap-[4px]">
-                <span className="font-serif font-light" style={{ fontSize: "1.08rem", color: "var(--color-cream)", letterSpacing: "0.01em" }}>
+                <span className="font-serif" style={{ fontSize: "1.08rem", color: "var(--color-cream)", letterSpacing: "0.01em" }}>
                   Yogic Bodywork
                 </span>
-                <span className="font-sans font-medium uppercase" style={{ fontSize: "0.56rem", letterSpacing: "0.3em", color: "rgba(232,168,32,.75)" }}>
+                <span className="font-sans font-medium uppercase" style={{ fontSize: "0.56rem", letterSpacing: "0.3em", color: "rgba(196,150,64,.75)" }}>
                   Institute
                 </span>
               </div>
@@ -39,7 +39,7 @@ export default function Footer() {
 
           {/* Nav links */}
           <div>
-            <p className="eyebrow mb-5" style={{ fontSize: "0.68rem", color: "rgba(232,168,32,.75)" }}>Navigate</p>
+            <p className="eyebrow mb-5" style={{ fontSize: "0.68rem", color: "rgba(196,150,64,.75)" }}>Navigate</p>
             <ul className="flex flex-col gap-3">
               {footerNav.map((item) => (
                 <li key={item.href}>
@@ -53,26 +53,15 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Two CTAs */}
-          <div className="flex flex-col gap-8">
-            <div>
-              <p className="eyebrow mb-2" style={{ fontSize: "0.68rem", color: "rgba(232,168,32,.75)" }}>
-                Continuing Education
-              </p>
-              <p className="font-light mb-3" style={{ fontSize: "0.88rem", color: "rgba(251,240,228,.55)" }}>
-                Be notified when the next CE cohort opens.
-              </p>
-              <EmailCapture variant="ce" context="footer-ce" stacked />
-            </div>
-            <div>
-              <p className="eyebrow mb-2" style={{ fontSize: "0.68rem", color: "rgba(232,168,32,.75)" }}>
-                Full Certification
-              </p>
-              <p className="font-light mb-3" style={{ fontSize: "0.88rem", color: "rgba(251,240,228,.55)" }}>
-                Join the waitlist for when certification opens.
-              </p>
-              <EmailCapture variant="cert" context="footer-cert" stacked />
-            </div>
+          {/* Single unified CTA */}
+          <div>
+            <p className="eyebrow mb-2" style={{ fontSize: "0.68rem", color: "rgba(196,150,64,.75)" }}>
+              Stay connected
+            </p>
+            <p className="font-light mb-5" style={{ fontSize: "0.9rem", color: "rgba(251,240,228,.55)" }}>
+              Join the list. Tell us what interests you — receiving sessions, CE credits, or full practitioner training — and we&apos;ll reach out when the time is right.
+            </p>
+            <EmailCapture context="footer" stacked />
           </div>
         </div>
 
