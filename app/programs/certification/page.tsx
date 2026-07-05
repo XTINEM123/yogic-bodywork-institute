@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function CertificationPage() {
   return (
     <>
-      <section style={{ background: "var(--color-clay)" }} className="px-6 py-24">
+      <section style={{ background: "var(--color-clay)" }} className="hero-banner px-6 py-24">
         <div className="max-w-3xl mx-auto">
           <p className="eyebrow mb-5" style={{ color: "rgba(247,243,238,.7)" }}>Programs — Coming Soon</p>
           <h1 className="font-serif font-light mb-5" style={{ fontSize: "clamp(2.4rem, 6vw, 4rem)", color: "var(--color-cream)", lineHeight: 1.08 }}>

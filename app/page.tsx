@@ -34,7 +34,7 @@ export default function HomePage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section style={{ background: "var(--color-forest)" }} className="px-6 py-28 md:py-36">
+      <section style={{ background: "var(--color-forest)" }} className="hero-banner px-6 py-28 md:py-36">
         <div className="max-w-4xl mx-auto text-center">
           <p className="eyebrow mb-6" style={{ color: "rgba(196,154,60,.8)", letterSpacing: "0.28em" }}>
             Yogic Bodywork Institute
@@ -82,10 +82,7 @@ export default function HomePage() {
       <section style={{ background: "var(--color-linen)" }} className="px-6 py-20">
         <div className="max-w-5xl mx-auto">
           <div className="section-divider mb-14" />
-          <p className="eyebrow mb-4 text-center">The Method</p>
-          <h2 className="font-serif text-center mb-14" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.6rem)" }}>
-            Breath · Position · Pressure · Participation · Rest
-          </h2>
+          <p className="eyebrow mb-10 text-center">The Method</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {pillars.map((p) => (
               <div key={p.word}>

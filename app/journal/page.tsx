@@ -36,7 +36,7 @@ const posts = [
 export default function JournalPage() {
   return (
     <>
-      <section style={{ background: "var(--color-linen)" }} className="px-6 py-24">
+      <section style={{ background: "var(--color-linen)" }} className="hero-banner px-6 py-24">
         <div className="max-w-3xl mx-auto">
           <p className="eyebrow mb-5">Journal</p>
           <h1 className="font-serif font-light mb-5" style={{ fontSize: "clamp(2.4rem, 5.5vw, 4rem)", lineHeight: 1.08 }}>

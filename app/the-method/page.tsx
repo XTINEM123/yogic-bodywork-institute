@@ -44,7 +44,7 @@ const elements = [
 export default function TheMethodPage() {
   return (
     <>
-      <section style={{ background: "var(--color-linen)" }} className="px-6 py-24">
+      <section style={{ background: "var(--color-linen)" }} className="hero-banner px-6 py-24">
         <div className="max-w-3xl mx-auto">
           <p className="eyebrow mb-5">The Method</p>
           <h1 className="font-serif mb-6" style={{ fontSize: "clamp(2.2rem, 5vw, 3.8rem)", lineHeight: 1.08 }}>

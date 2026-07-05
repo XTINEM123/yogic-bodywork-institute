@@ -19,7 +19,7 @@ export default function TheModalityPage() {
   return (
     <>
       {/* Header */}
-      <section style={{ background: "linear-gradient(160deg, var(--color-forest), #142b22)" }} className="px-6 py-24">
+      <section style={{ background: "linear-gradient(160deg, var(--color-forest), #142b22)" }} className="hero-banner px-6 py-24">
         <div className="max-w-3xl mx-auto">
           <p className="eyebrow mb-5" style={{ color: "rgba(196,154,60,.8)" }}>The Modality</p>
           <h1 className="font-serif font-light mb-6" style={{ fontSize: "clamp(2.6rem, 6vw, 4.2rem)", color: "var(--color-cream)", lineHeight: 1.08 }}>
